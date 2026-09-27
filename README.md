@@ -1,0 +1,1 @@
+To run this project, open Godot 4.7, create a new project, and import the contents of this repository into the project directory. Then, open the 'Main.tscn' scene and run the project.

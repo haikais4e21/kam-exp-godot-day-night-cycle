@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://DayNightCycle.gd" type="Script" id=1]
+
+[node name="Main" type="Node"]
+transform=(Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0))
+
+[node name="DirectionalLight" type="DirectionalLight3D" parent="Main"]
+transform=(Transform3D(1, 0, 0, 0, 0.707107, 0.707107, 0, -0.707107, 0.707107, 0, 0, 0))
+color=(Color(1, 1, 1, 1))
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="Main"]
+background_mode=0
+ambient_light_color=(Color(0.2, 0.2, 0.2, 1))
+
+[node name="DayNightCycle" type="Node" parent="Main"]
+script=ExtResource( 1 )
